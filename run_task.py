@@ -1,4 +1,4 @@
-from job import process
+from scraper.job import process
 
 if __name__ == "__main__":
     url = "https://example.com"
@@ -6,4 +6,5 @@ if __name__ == "__main__":
     print("Task submitted!")
 
     # You can block until result is ready:
-    print("Result:", result.get(timeout=20))
+    print("Result:", result.get(timeout=60))
+    print("test")

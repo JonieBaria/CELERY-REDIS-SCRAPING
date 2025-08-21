@@ -7,7 +7,7 @@ app = Celery(
 )
 
 # Import tasks explicitly so Celery knows about them
-import job
+import scraper.job
 
 # Optional settings
 # app.conf.update(
