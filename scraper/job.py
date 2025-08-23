@@ -5,7 +5,7 @@ from celery_app import app  # Import the Celery app instance
 
 
 @app.task
-def process(url):
+def process(url="https://example.com"):
     try:
         # Fetch the page
         response = requests.get(url, timeout=10)
